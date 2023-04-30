@@ -11,10 +11,13 @@
 </head>
 
 <body>
-  <form action='/summary_webpage/summary.html'>
-    <p>:3</p>
-    <input type='submit' value='End'>
+  <form id='form' action='/summary_webpage/summary.html'>
+      <legend><span id='diff'></span> - <span id='qNum'></span></legend>
+      <p id='question'></p>
+      <input id='userAns' type='text' placeholder="Input answer...">
+      <input type='submit' value='Check' style='display:none'> 
   </form>
+  <button id='next'>Check</button>
   <script src="quiz.js"></script>
 </body>
 
