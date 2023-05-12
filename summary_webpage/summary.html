@@ -7,15 +7,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Summary</title>
-  <link href="summary.css" rel="stylesheet" type="text/css" />
+  <link href="summary.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-  <p>Your score is: <span id='score'></span>/5</p>
-  <p>Your rank is: Coming soon</p>
-  <p>Top 10 scorers: Coming soon</p>
-  <p>Summary: Coming soon</p>
+  <h3>Hello, <span id='uName'></span>.</h3>
+  <div id='summary'>
+    <p>Your score is: <span id='score'></span>/5</p>
+    <p>Your rank is: Coming soon</p>
+    <p>Top 10 scorers: Coming soon</p>
+    <p>Summary</p>
+  </div>
+  <button id='show'>SHOW QUESTIONS</button>
+  <div id='review'>
+    <p id='questionHtml'></p>
+    <p id='answerHtml'></p>
+  </div>
+  <button id='prev'>PREVIOUS</button>
+  <button id='next'>NEXT</button>
+  
   <script src="summary.js"></script>
+
 </body>
 
 </html>

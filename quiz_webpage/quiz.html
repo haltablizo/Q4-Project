@@ -12,12 +12,15 @@
 
 <body>
   <form id='form' action='/summary_webpage/summary.html'>
-      <legend><span id='diff'></span> - <span id='qNum'></span></legend>
+      <br><legend><span id='diff'>Easy</span> - <span id='qNum'></span></legend>
       <p id='question'></p>
-      <input id='userAns' type='text' placeholder="Input answer...">
-      <input type='submit' value='Check' style='display:none'> 
+      <input name='userAns' value='choiceA' type='radio'><span id='choice1'></span><br>
+      <input name='userAns' value='choiceB' type='radio'><span id='choice2'></span><br>
+      <input name='userAns' value='choiceC' type='radio'><span id='choice3'></span><br>
+      <p id='uStat'></p>
+      <p id='fact'></p>
   </form>
-  <button id='next'>Check</button>
+  <button id='next'>NEXT</button><br>
   <script src="quiz.js"></script>
 </body>
 

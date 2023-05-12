@@ -6,19 +6,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <meta name="authors" content="Gabriel, Santos, Tablizo">
+  <meta name="lastUpdated" content="05/12/2023">
   <title>Project</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <p>Welcome to Periodic Puzzle! Can you score higher than 99% of players?</p>
-  <form action='quiz_webpage/quiz.html'>
+  <div>
+    <h2>Welcome to Periodic Puzzle!</h2>
+    <p><br>Can you score higher than 99% of players?</p>
+  </div>
+  <form id='form' action='quiz_webpage/quiz.html'>
     <fieldset>
-      <legend>User info</legend>
-      <label for="userName">Username:</label><br>
+      <!--<legend>User info</legend>-->
+      <br>
+      <label for="userName">USERNAME:</label>
       <input type="text" id="userName" required>
       <br><br>
-      <input type='submit' value='Enter!'>
+      <button id='submit'>ENTER</button>
+      <input type='reset' value='RESET'>
     </fieldset>
     
   </form>

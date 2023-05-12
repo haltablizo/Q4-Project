@@ -1,0 +1,53 @@
+body {
+  background-image: url('../imgs/background.png');
+  background-color: #0B3C5D;
+}
+h3 {
+  text-align: center;
+  color: #F5E753;
+  font-size: 50px;
+  margin: 10px;
+  font-family: 'Vina Sans Regular';
+  letter-spacing: 2.5px;
+}
+#summary {
+  display: block;
+  margin: auto;
+  background-color: white;
+  opacity: .8;
+  text-align: center;
+  width: 25%;
+  padding: 15px;
+  border-radius: 25%;
+}
+#summary > p {
+  font-family: 'Space Mono Regular';
+  color: #090909;
+}
+button {
+  position: relative;
+  left: 42.5%;
+  font-size: 15px;
+  font-family: 'Space Mono Regular';
+  color: #090909;
+  margin: 10px;
+}
+#show {
+  margin-top: 50px;
+}
+#review {
+  text-align: center;
+  font-family: 'Space Mono Regular';
+  color: white;
+}
+div {
+  margin: 25px;
+}
+@font-face {
+  font-family: 'Vina Sans Regular';
+  src: url('../fonts/VinaSans-Regular.ttf')
+}
+@font-face {
+  font-family: 'Space Mono Regular';
+  src: url('../fonts/SpaceMono-Regular.ttf');
+}

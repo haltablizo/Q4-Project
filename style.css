@@ -2,3 +2,52 @@ html {
   height: 100%;
   width: 100%;
 }
+body {
+  background-image: url('imgs/background.png');
+  background-color: #0B3C5D;
+}
+div {
+  position: absolute;
+  left: 31.5%;
+  top: 25%;
+}
+h2, p {
+  color: #F5E753;
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+  font-family: 'Vina Sans Regular';
+  letter-spacing: 2.5px;
+}
+p {
+  font-size: 20px;
+}
+fieldset {
+  width: 25%;
+  text-align: center;
+  background-color: white;
+  opacity: .8;
+  border-radius: 40%;
+  border: none;
+  position: absolute;
+  left: 37.5%;
+  top: 50%;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+input {
+  border: none;
+}
+label, input, button {
+  font-family: 'Space Mono Regular';
+  color: #090909;
+}
+@font-face {
+  font-family: 'Vina Sans Regular';
+  src: url('fonts/VinaSans-Regular.ttf')
+}
+@font-face {
+  font-family: 'Space Mono Regular';
+  src: url('fonts/SpaceMono-Regular.ttf');
+}
