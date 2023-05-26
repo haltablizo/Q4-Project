@@ -14,6 +14,9 @@ form {
   width: 25%;
   padding: 15px;
   border-radius: 25%;
+
+  transition: border-radius 1s;
+  animation: 1s ease-out 0s 1 sunrise;
 }
 legend {
   color: #F5E753;
@@ -28,12 +31,23 @@ p, button, #choice1, #choice2, #choice3 {
   color: #090909;
   margin: 10px;
 }
+#textDiff {
+  position: relative;
+  margin: auto;
+}
+#nextDiff {
+  position: relative;
+  left: 46.5%;
+  margin: 10px;
+  margin-top: 41.5%;
+}
 button {
   position: absolute;
   top: 50%;
   left: 47.5%;
-  
 }
+
+/*Fonts*/
 @font-face {
   font-family: 'Vina Sans Regular';
   src: url('../fonts/VinaSans-Regular.ttf')
@@ -41,4 +55,44 @@ button {
 @font-face {
   font-family: 'Space Mono Regular';
   src: url('../fonts/SpaceMono-Regular.ttf');
+}
+
+/*Animation and Transitions*/
+form:hover {
+  border-radius: 15%;
+  transition: border-radius 1s;
+}
+legend:hover {
+  transform: scale(1.25,1.25);
+  transition: 1s;
+}
+legend {
+  transform: scale(1,1);
+  transition: 1s;
+}
+input:hover {
+  transform: scale(1.5,1.5);
+  transition: 1s;
+}
+input {
+  transform: scale(1,1);
+  transition: 1s;
+}
+#textDiff:hover {
+  transform: none;
+}
+#next:hover, #nextDiff:hover {
+  transform: scale(1.25, 1.25);
+  border: 1px solid black;
+  background-color: white;
+  transition: 1s;
+}
+#next, #nextDiff {
+  transform: scale(1,1);
+  transition: 1s;
+}
+
+@keyframes sunrise {
+  0% {transform: translateY(100%)}
+  100% {transform: translateY(0)}
 }

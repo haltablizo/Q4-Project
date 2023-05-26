@@ -2,6 +2,9 @@ body {
   background-image: url('../imgs/background.png');
   background-color: #0B3C5D;
 }
+h3, #summary, #show {
+  animation: 1s ease-out 0s 1 sunrise;
+}
 h3 {
   text-align: center;
   color: #F5E753;
@@ -19,10 +22,13 @@ h3 {
   width: 25%;
   padding: 15px;
   border-radius: 25%;
+
+  transition: border-radius 1s;
 }
 #summary > p {
-  font-family: 'Space Mono Regular';
-  color: #090909;
+  font-family: Fantasy, "Copperplate";
+  color: Grey;
+  font-size: 20px;
 }
 button {
   position: relative;
@@ -31,6 +37,9 @@ button {
   font-family: 'Space Mono Regular';
   color: #090909;
   margin: 10px;
+
+  transform: scale(1,1);
+  transition: 1s;
 }
 #show {
   margin-top: 50px;
@@ -43,6 +52,8 @@ button {
 div {
   margin: 25px;
 }
+
+/*FONTS*/
 @font-face {
   font-family: 'Vina Sans Regular';
   src: url('../fonts/VinaSans-Regular.ttf')
@@ -50,4 +61,36 @@ div {
 @font-face {
   font-family: 'Space Mono Regular';
   src: url('../fonts/SpaceMono-Regular.ttf');
+}
+
+/*ANIMATIONS AND TRANSITIONS*/
+h3:hover {
+  transform: scale(1.25, 1.25);
+  transition: 1s;
+}
+h3 {
+  transform: scale(1,1);
+  transition: 1s;
+}
+#summary:hover {
+  border-radius: 15%;
+  transition: border-radius 1s;
+}
+button:hover {
+  border: 1px solid black;
+  background-color: white;
+  transition: 1s;
+}
+#show:hover {
+  transform: scale(1.5,1.5);
+  transition: 1s;
+}
+#prev:hover, #next:hover {
+  transform: scale(1.25, 1.25);
+  transition: 1s;
+}
+
+@keyframes sunrise {
+  0% {transform: translateY(100%)}
+  100% {transform: translateY(0)}
 }
